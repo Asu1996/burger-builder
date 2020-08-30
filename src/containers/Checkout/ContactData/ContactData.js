@@ -6,7 +6,7 @@ import Spinner from '../../../components/UI/Spinner/Spinner'
 
 import classes from './ContactData.module.css'
 
-class conatctData extends Component {
+class contactData extends Component {
 
     state = {
         name:'',
@@ -22,8 +22,8 @@ class conatctData extends Component {
         event.preventDefault();
            this.setState({loading: true});
             const order = {
-                ingredients: this.state.ingredients,
-                price: this.state.price,
+                ingredients: this.props.ingredients,
+                price: this.props.price,
                 customerdata: {
                     name: 'alpha',
                     address: {
@@ -66,4 +66,4 @@ class conatctData extends Component {
 
 }
 
-export default conatctData;
+export default contactData;
