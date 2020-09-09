@@ -13,5 +13,10 @@ describe('<NavigationItems />', () => {
     it('yaha 2 render hona chahiye!!', () => {
         const wrapper = shallow(<NavigationItems />)
         expect(wrapper.find(NavigationItem)).toHaveLength(2);
-    })
+    });
+
+    it('yaha 3 render hona chahiye!!', () => {
+        const wrapper = shallow(<NavigationItems isAuthenticated/>)
+        expect(wrapper.find(NavigationItem)).toHaveLength(3);
+    });
 })
